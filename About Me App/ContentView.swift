@@ -30,10 +30,14 @@ struct ContentView: View {
                         .font(.title)
                         .fontWeight(.bold)
                     
-                    
-                    Button("Press for new fun fact"){
-                        
-                        answer = "I also love to go out and explore nature"}
+                    VStack(spacing: 20.0){
+                        Button("Fun fact"){
+                            
+                            answer = "I also love to go out and explore nature"}
+                        Button("Fun Fact"){
+                            answer = "I love working at Olive Garden, because of the people I interact with"
+                        }
+                    }
                     
                     Text(answer)
                     
